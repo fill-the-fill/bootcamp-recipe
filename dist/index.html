@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>EXAM</title>
+</head>
+
+<body>
+    <div id="search-container">
+        <input id="input" type="text" placeholder="Search for food!">
+        <button onclick=find()>Search</button>
+    </div>
+
+
+    <div id="displayFood"></div>
+
+
+    <script id="recipe-template" type="text/x-handlebars">
+    {{#each data}}
+        <div class='food'>
+            <img class="size" src="{{picture}}" alt="">
+            <div id='title'>{{title}}</div>
+            <div id='ingredients'>INGREDIENTS: {{ingredients}}</div>
+            <a id='href' href="{{videoLink}}"> Check this tutorial! </a>
+        </div>
+    {{/each}}
+    </script>
+
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+    
+
+
+</body>
+
+</html>

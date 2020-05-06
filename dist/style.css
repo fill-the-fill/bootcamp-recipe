@@ -1,0 +1,33 @@
+body{
+    min-height: 100vh; 
+    background-color: #F3FFC6;
+ }
+ 
+ #displayFood{
+ display: grid;
+ font-family: 'Poppins', sans-serif;
+ grid-gap: 10px;
+ grid-template-columns: 300px 300px 300px 300px;
+ position: absolute;
+ top: 110px;
+ left: 50%;
+ transform: translate(-50%);
+
+ }
+
+ #title{
+     color: black;
+     border-style: solid;
+     justify-content: center;
+ }
+.size {
+    width: 300px;
+    height: auto;
+    border-style: solid;
+
+}
+
+.size {
+    width: 300px;
+    height: auto;
+}
